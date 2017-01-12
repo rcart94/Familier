@@ -1,0 +1,20 @@
+#include <limits.h>
+#include <unistd.h>
+#include <signal.h>
+#include <stdio.h>
+#include <time.h>
+
+unsigned int count = 0;
+
+void handler (int sig) {printf("%u\n",count); alarm(1);}
+
+int main () {
+    clock_t temps;
+    signal (SIGALRM, handler);
+    for (count=0; count<(2^32); count++){;}
+    temps=clock();
+    printf("Temps de calcul = %f.\n", (double)temps/CLOCKS_PER_SEC);
+
+
+    return(0);
+}
