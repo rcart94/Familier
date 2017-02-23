@@ -6,33 +6,29 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import rcart.familier.ItemFragment.OnListFragmentInteractionListener;
+//import rcart.familier.ItemFragment.OnListFragmentInteractionListener;
 import rcart.familier.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- * TODO: Replace the implementation with code for your data type.
- */
-public class MyObjetRecyclerViewAdapter extends RecyclerView.Adapter<MyObjetRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyItem> mValues;
-    private final OnListFragmentInteractionListener mListener;
-
+//public class MyObjetRecyclerViewAdapter extends RecyclerView.Adapter<MyObjetRecyclerViewAdapter.ViewHolder> {
+    public class MyObjetRecyclerViewAdapter {
+   // private final List<DummyItem> mValues;
+    //private final OnListFragmentInteractionListener mListener;
+/*
     public MyObjetRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         mListener = listener;
-    }
-
+    }*/
+/*
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.fragment_item, parent, false);
         return new ViewHolder(view);
-    }
-
+    }*/
+/*
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
@@ -49,13 +45,13 @@ public class MyObjetRecyclerViewAdapter extends RecyclerView.Adapter<MyObjetRecy
                 }
             }
         });
-    }
-
+    }*/
+/*
     @Override
     public int getItemCount() {
         return mValues.size();
     }
-
+*/
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
         public final TextView mIdView;
