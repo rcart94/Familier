@@ -42,7 +42,7 @@
                         android:layout_width="327dp"
                         android:layout_height="220dp"
                         app:srcCompat="@mipmap/ic_launcher"
-                        android:id="@+id/imageView"
+                        android:id="@+id/imgMonstre"
                         android:src="@drawable/monsterunhappy"/>
 
                 </LinearLayout>
@@ -53,38 +53,31 @@
                     android:layout_height="190dp">
 
                     <TextView
-                        android:text="Yéti lvl 1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView"
+                        android:id="@+id/textIdentifiant"
                         android:layout_weight="1"
                         android:textColor="@android:color/background_light" />
 
                     <TextView
-                        android:text="0/200 points d'experiences"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView2"
+                        android:id="@+id/testExperience"
                         android:layout_weight="1"
-                        tools:text="0/200 points d'experiences"
                         android:textColor="@android:color/background_light" />
 
                     <TextView
-                        android:text="50/50 points de vie"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView3"
+                        android:id="@+id/textVie"
                         android:layout_weight="1"
-                        tools:text="50/50 points de vie"
                         android:textColor="@android:color/background_light" />
 
                     <TextView
-                        android:text="100/100 points d'endurance"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
+                        android:id="@+id/textEndurance"
                         android:layout_weight="1"
-                        tools:text="100/100 points d'endurance"
                         android:textColor="@android:color/background_light" />
                 </LinearLayout>
 
@@ -101,13 +94,13 @@
                 android:layout_width="84dp"
                 android:layout_height="71dp"
                 app:srcCompat="@drawable/iconfood"
-                android:id="@+id/imageButton5"
+                android:id="@+id/btnManger"
                 android:background="@android:drawable/list_selector_background" />
 
             <ImageButton
                 android:layout_width="76dp"
                 android:layout_height="match_parent"
-                android:id="@+id/imageButton4"
+                android:id="@+id/btnSport"
                 app:srcCompat="@drawable/iconsport"
                 android:background="@android:drawable/list_selector_background" />
 
@@ -115,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_recent_history"
-                android:id="@+id/imageButton3"
+                android:id="@+id/btnSommeil"
                 android:layout_weight="1.07"
                 android:background="@android:drawable/list_selector_background" />
 
@@ -123,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_manage"
-                android:id="@+id/imageButton2"
+                android:id="@+id/btnOptions"
                 android:layout_weight="1.52"
                 android:background="@android:drawable/list_selector_background" />
         </LinearLayout>
